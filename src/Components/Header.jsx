@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import logo from "../assets/images/skydevz_icon2.svg"
 import { setHome } from '../redux/reducer/mainState'
 
@@ -10,7 +11,7 @@ function Header() {
   const blogsLink = useRef(0);
 
   const homeFun = () => {
-    dispatch(setHome(true))
+    // dispatch(setHome(true))
     const home = homeLink.current
     home.className = 'active header_nav-link '
     productsLink.current.className = 'header_nav-link '
@@ -18,15 +19,16 @@ function Header() {
   }
 
   const productsFun = () => {
-    dispatch(setHome(true))
+    // dispatch(setHome(true))
     const products = productsLink.current
     products.className = 'active header_nav-link '
     homeLink.current.className = 'header_nav-link '
     blogsLink.current.className = 'header_nav-link '
+
   }
 
   const blogsFun = () => {
-    dispatch(setHome(false))
+    // dispatch(setHome(false))
     const blogs = blogsLink.current
     blogs.className = 'active header_nav-link '
     homeLink.current.className = 'header_nav-link '
@@ -45,9 +47,9 @@ function Header() {
         <a href="#">Link 3</a>
       </div> */}
       <nav className='header_nav'>
-        <a href='#' ref={homeLink} onClick={()=>{homeFun()}} className='header_nav-link active'> Home</a>
-        <a href='#home_Products' ref={productsLink} onClick={()=>{productsFun()}} className='header_nav-link'> Products</a>
-        <a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a>
+        <Link to="/" className='text-decoration'><a href='#' ref={homeLink} onClick={()=>{homeFun()}} className='header_nav-link active'> Home</a></Link>
+        <Link to="/" href='#home_Products' className='text-decoration'><a href='#home_Products' ref={productsLink} onClick={()=>{productsFun()}} className='header_nav-link'> Products</a></Link>
+        <Link to="blog" className='text-decoration'><a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a></Link>
       </nav>
     </div>
   )

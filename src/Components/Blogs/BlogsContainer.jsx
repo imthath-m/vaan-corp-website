@@ -6,8 +6,6 @@ import { Pagination, Stack, Typography } from '@mui/material';
 
 function BlogsContainer() {
   const blogs = useSelector(state => state.mainState.blogs);
-  console.log(blogs);
-
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
       setPage(value);
