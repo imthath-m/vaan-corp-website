@@ -1,14 +1,16 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 function Blog(props) {
 
     let date = props.blog.pubDate.slice(0,10);
     let blogDate = new Date(date).toDateString().slice(3);
-
+   
   return (
-    <>
-        <div className='blogs_card' onClick={()=>{alert(JSON.stringify(props.blog))}}>
+    <Link to= {`/blogFull/${props.blog.title}`}>
+        <div className='blogs_card'  >
             <div className='blogs_card-view'>
                 <img src={props.blog.thumbnail} className='blogs_card-img' alt='blogImage'></img>
                 <div className='blogs_card-tags'>
@@ -30,7 +32,7 @@ function Blog(props) {
                 </div>
             </div>
         </div>
-    </>
+    </Link>
   )
 }
 

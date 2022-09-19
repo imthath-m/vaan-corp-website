@@ -653,6 +653,18 @@ $color-footer: #BC975E;
       }
     }
   }
+
+  &Full{
+    &_title{
+    font-family: 'Roboto Slab';
+        font-style: normal;
+  font-weight: 700;  
+  font-size: 64px; 
+      line-height: 115%;
+      letter-spacing: -0.032em;
+      color: #000000;
+    }
+  }
 }
 
 .active {

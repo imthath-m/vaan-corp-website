@@ -49,7 +49,7 @@ function Header() {
       <nav className='header_nav'>
         <Link to="/" className='text-decoration'><a href='#' ref={homeLink} onClick={()=>{homeFun()}} className='header_nav-link active'> Home</a></Link>
         <Link to="/" href='#home_Products' className='text-decoration'><a href='#home_Products' ref={productsLink} onClick={()=>{productsFun()}} className='header_nav-link'> Products</a></Link>
-        <Link to="blog" className='text-decoration'><a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a></Link>
+        <Link to="/blog" className='text-decoration'><a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a></Link>
       </nav>
     </div>
   )
