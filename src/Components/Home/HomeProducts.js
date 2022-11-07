@@ -5,14 +5,14 @@ import swimbols from '../../assets/images/Swimbols_icon.png'
 import haafidh from '../../assets/images/Haafidh_icon.png'
 import countDownIcon from '../../assets/images/Countdown_icon.png'
 import countDown from '../../assets/images/Countdown_image.png'
-import { haafidhPage } from '../../helper'
+import { appsPage } from '../../helper'
 
 function HomeProducts() {
   return (
     <section className='home_Products' id='home_Products'>
       <h1 className='home_Products-heading'>Products</h1>
       <div className='home_Products-cards'>
-        <figcaption className='home_Products-card'>
+        <figcaption className='home_Products-card' onClick={()=> {appsPage()}}>
           <img alt='' src={image1} className='home_Products-card_image'/>
           <div className='home_Products-card_title'>
             <img alt='' src={swimbols} className='home_Products-card_titleImg'/>
@@ -22,7 +22,7 @@ function HomeProducts() {
             and then changing symbols all in one place, and take your code with you.
           </p>
         </figcaption>
-        <figcaption className='home_Products-card' onClick={()=> {haafidhPage()}}>
+        <figcaption className='home_Products-card' onClick={()=> {appsPage()}}>
           <img alt='' src={image2} className='home_Products-card_image'/>
           <div className='home_Products-card_title'>
             <img alt='' src={haafidh} className='home_Products-card_titleImg'/>
@@ -33,7 +33,7 @@ function HomeProducts() {
             Quran app
           </p>
         </figcaption>
-        <figcaption className='home_Products-card'>
+        <figcaption className='home_Products-card' onClick={()=> {appsPage()}}>
           <img alt='' src={countDown} className='home_Products-card_image'/>
           <div className='home_Products-card_title'>
             <img alt='' src={countDownIcon} className='home_Products-card_titleImg'/>

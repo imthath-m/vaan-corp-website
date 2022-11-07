@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
 import twitter from "../assets/images/twitter.svg"
+import toast, { Toaster } from 'react-hot-toast';
 
 function Footer() {
   const [first, setFirst] = useState('');
-
+ 
   const handleSubmit = event => {
+    // const notify = () => toast("Wow so easy!");
+    // nnotify()
+    // function nnotify() {
+    //  const notify = () => toast("Wow so easy!");
+    // }
     event.preventDefault();
     const data = {
       "email": first,
-      "source" : "haafidh",
+      "source" : "vaanCorp",
       "platform" : navigator.platform
   }
   fetch('https://email-collector-10.herokuapp.com/api/v1/emails/create', {
@@ -21,13 +27,16 @@ function Footer() {
       .then(response => response.json())
       .then(data => {
       console.log('Success:', data);
+      
       })
       .catch((error) => {
       console.error('Error:', error);
+     
   });
     console.log('form submitted ✅');
     // 👇️ clear input field values
     setFirst('');
+    // window.location.reload()
   }
   return (
     <footer className='footer' id='footer'>

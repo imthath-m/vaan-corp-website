@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import logo from "../assets/images/skydevz_icon2.svg"
+import logo from "../assets/images/Skydevz_brown_logo.svg"
 import { setHome } from '../redux/reducer/mainState'
 
 function Header() {
@@ -37,20 +37,26 @@ function Header() {
 
   return (
     <div className='header'>
-      <img src={logo} alt="trillo logo" className='header_logo'/>
+      <div className='header_logo'>
+        <img src={logo} alt="skydevz_logo" />
+        <p className='header_logo-title'>VA<a className='header_logo-titleColor'>AN</a></p>
+      </div>
       {/* Hamburger icon  */}
-      <input class="header_side-menu" type="checkbox" id="side-menu"/>
-      <label class="header_hamb" for="side-menu"><span class="header_hamb-line"></span></label>
-      {/* <div class="header_hamb-dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div> */}
-      <nav className='header_nav'>
-        <Link to="/" className='text-decoration'><a href='#' ref={homeLink} onClick={()=>{homeFun()}} className='header_nav-link active'> Home</a></Link>
-        <Link to="/" href='#home_Products' className='text-decoration'><a href='#home_Products' ref={productsLink} onClick={()=>{productsFun()}} className='header_nav-link'> Products</a></Link>
-        <Link to="/blog" className='text-decoration'><a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a></Link>
-      </nav>
+      <div>
+        <input class="header_side-menu" type="checkbox" id="side-menu"/>
+        <label class="header_hamb" for="side-menu"><span class="header_hamb-line"></span></label>
+        {/* <div class="header_hamb-dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div> */}
+        <nav className='header_nav'>
+          <Link to="/" className='text-decoration'><a href='#' ref={homeLink} onClick={()=>{homeFun()}} className='header_nav-link active'> Home</a></Link>
+          {/* <Link to="/" href='#home_Products' className='text-decoration'><a href='#home_Products' ref={productsLink} className='header_nav-link'> Products</a></Link> */}
+          <a href='#home_Products' ref={productsLink} className='header_nav-link'> Products</a>
+          {/* <Link to="/blog" className='text-decoration'><a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a></Link> */}
+        </nav>
+        </div>
     </div>
   )
 }

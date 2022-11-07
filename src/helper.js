@@ -2,8 +2,8 @@ import axios from "axios";
 import { setBlogs } from "./redux/reducer/mainState";
 import { Store } from "./redux/Store";
 
-export const haafidhPage = () => {
-    window.open('https://skydevz.netlify.app', '_blank');
+export const appsPage = () => {
+    window.open('https://apps.apple.com/developer/mohammed-imthathullah-m/id1507415155', '_blank');
 }
 
 export const getAllBlogs = () => {
