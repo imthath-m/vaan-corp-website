@@ -7,7 +7,7 @@ function HomeTitle() {
         <div className='home-Title_Content'>
             <h1>Vaan</h1>
             <p>Home to <span>intriguing apps</span> built for the Apple platforms.</p>
-            <a href='#footer' className='home-Title_ContentLink'><button>Get in touch</button></a>
+            {/* <a href='#footer' className='home-Title_ContentLink'><button>Get in touch</button></a> */}
         </div>
         <img src={image} className='home-Title_image' alt='homeTitle_pic' />
     </section>

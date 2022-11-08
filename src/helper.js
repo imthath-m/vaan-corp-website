@@ -2,8 +2,17 @@ import axios from "axios";
 import { setBlogs } from "./redux/reducer/mainState";
 import { Store } from "./redux/Store";
 
-export const appsPage = () => {
-    window.open('https://apps.apple.com/developer/mohammed-imthathullah-m/id1507415155', '_blank');
+
+export const haafidhPage = () => {
+    window.open('https://apps.apple.com/us/app/haafidh/id1571078630', '_blank');
+}
+
+export const swimbolsPage = () => {
+    window.open('https://apps.apple.com/us/app/swimbols/id1525226399', '_blank');
+}
+
+export const countdownPage = () => {
+    window.open('https://apps.apple.com/us/app/countdown-for-your-events/id1519488760', '_blank');
 }
 
 export const getAllBlogs = () => {
