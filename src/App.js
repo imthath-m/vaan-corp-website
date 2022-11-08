@@ -18,7 +18,7 @@ function App() {
         <Route path='/blog' element={<BlogsContainer />} />
         <Route path='/blogFull/:id' element={<BlogFullPage />} />
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
       </>
   );
 }
