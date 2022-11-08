@@ -401,7 +401,8 @@ $color-footer: #BC975E;
 
     @media only screen and (max-width:$bp-small) {
       // position: absolute;
-      margin-top: 0
+      margin-top: 0;
+      margin-bottom: 40rem;
     }
 
     &-heading {
