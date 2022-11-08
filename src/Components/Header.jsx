@@ -39,7 +39,7 @@ function Header() {
     <div className='header'>
       <div className='header_logo'>
         <img src={logo} alt="skydevz_logo" />
-        <p className='header_logo-title'>VA<a className='header_logo-titleColor'>AN</a></p>
+        <p className='header_logo-title'>VAAN</p>
       </div>
       {/* Hamburger icon  */}
       <div>

@@ -37,7 +37,7 @@ function Footer() {
   }
   return (
     <footer className='footer' id='footer'>
-      <div className='footer_heading'>
+      {/* <div className='footer_heading'>
         <h1 className='footer_heading-h'>Subscribe to our newsletter</h1>
         <p className='footer_heading-p'>Get latest news and update</p>
       </div>
@@ -48,7 +48,7 @@ function Footer() {
           required></input>
         <button type='submit' className='footer_form-button'>Submit</button>
         <Toaster position="bottom-center" />
-      </form>
+      </form> */}
       <span className='footer-copyrights'>
         <a href='https://twitter.com/skydevz' target="_blank"><img className='footer-copyrights_img' alt='footer_twit_pic' src={twitter} /></a>
          © {new Date().getFullYear()}, Vaan Corporation. All Rights Reserved.</span>
