@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import twitter from "../assets/images/twitter.svg"
 import toast, { Toaster } from 'react-hot-toast';
+import { twitterPage } from '../helper'
 
 function Footer() {
   const [first, setFirst] = useState('');
@@ -36,7 +37,7 @@ function Footer() {
     // window.location.reload()
   }
   return (
-    <footer className='footer' id='footer'>
+    <footer className='footer' id='footer' onClick={twitterPage}>
       {/* <div className='footer_heading'>
         <h1 className='footer_heading-h'>Subscribe to our newsletter</h1>
         <p className='footer_heading-p'>Get latest news and update</p>
@@ -50,7 +51,7 @@ function Footer() {
         <Toaster position="bottom-center" />
       </form> */}
       <span className='footer-copyrights'>
-        <a href='https://twitter.com/skydevz' target="_blank"><img className='footer-copyrights_img' alt='footer_twit_pic' src={twitter} /></a>
+        {/* <a href='https://twitter.com/skydevz' target="_blank"><img className='footer-copyrights_img' alt='footer_twit_pic' src={twitter} /></a> */}
          © {new Date().getFullYear()}, Vaan Corporation. All Rights Reserved.</span>
     </footer>
   )

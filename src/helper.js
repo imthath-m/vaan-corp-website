@@ -15,6 +15,10 @@ export const countdownPage = () => {
     window.open('https://apps.apple.com/us/app/countdown-for-your-events/id1519488760', '_blank');
 }
 
+export const twitterPage = () => {
+    window.open('https://twitter.com/skydevz', '_blank');
+}
+
 export const getAllBlogs = () => {
     const url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@imthath";
     axios.get(`${url}`)

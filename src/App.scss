@@ -587,6 +587,7 @@ $color-footer: #BC975E;
   background-color: #F6E4C8;
   margin-top: 10rem;
   position: relative;
+  cursor: pointer;
 
   @media only screen and (max-width:$bp-small) {
     display: flex;
