@@ -6,11 +6,7 @@ function Footer() {
   const [first, setFirst] = useState('');
  
   const handleSubmit = event => {
-    // const notify = () => toast("Wow so easy!");
-    // nnotify()
-    // function nnotify() {
-    //  const notify = () => toast("Wow so easy!");
-    // }
+    
     event.preventDefault();
     const data = {
       "email": first,
@@ -27,11 +23,12 @@ function Footer() {
       .then(response => response.json())
       .then(data => {
       console.log('Success:', data);
-      
+      // toast('Submit Successfully',{ duration: 10000, position: 'bottom-center'})
+      toast.success("Submitted Successfully")
       })
       .catch((error) => {
       console.error('Error:', error);
-     
+      toast.error("Something went wrong!")
   });
     console.log('form submitted ✅');
     // 👇️ clear input field values
@@ -50,6 +47,7 @@ function Footer() {
           onChange={event => setFirst(event.target.value)}
           required></input>
         <button type='submit' className='footer_form-button'>Submit</button>
+        <Toaster position="bottom-center" />
       </form>
       <span className='footer-copyrights'>
         <a href='https://twitter.com/skydevz' target="_blank"><img className='footer-copyrights_img' alt='footer_twit_pic' src={twitter} /></a>
