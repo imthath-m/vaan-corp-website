@@ -915,6 +915,25 @@ $color-footer: #BC975E;
   }
 
   &Full{
+
+    &_header{
+      display: flex;
+      flex-direction: column;
+      height: 15rem;
+      justify-content: space-between;
+
+      &_author{
+        display: flex;
+        align-items: center;
+      }
+
+      &_span{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+
     &_title{
       font-family: 'Roboto Slab';
       font-style: normal;
@@ -924,6 +943,7 @@ $color-footer: #BC975E;
       letter-spacing: -0.032em;
       color: #000000;
     }
+
   }
 }
 
