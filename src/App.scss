@@ -916,6 +916,10 @@ $color-footer: #BC975E;
 
   &Full{
 
+    &_Container {
+      margin: auto 8rem;
+    }
+
     &_header{
       display: flex;
       flex-direction: column;
@@ -942,6 +946,7 @@ $color-footer: #BC975E;
       line-height: 115%;
       letter-spacing: -0.032em;
       color: #000000;
+      width: 50%;
     }
 
   }

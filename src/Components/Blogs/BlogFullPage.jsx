@@ -15,7 +15,7 @@ function BlogFullPage() {
   // useEffect(()=>{},[]);
 
   return (
-    <div>
+    <div className='blogsFull_Container'>
       BlogFullPage
       <div className='blogsFull_header'>
         <h1 className='blogsFull_title'>{data.title}</h1>
@@ -24,9 +24,15 @@ function BlogFullPage() {
             <span className='blogs_card-Div_text'>written by {data.author}</span>
         </div> 
         <div className='blogsFull_header_span'>
-                      <p className='blogs_card-Div_date'>{blogDate}</p>
-                      <span className='blogs_card-Div_line'></span>
-                      <p className='blogs_card-Div_date'>3 mins read</p>
+          <p className='blogs_card-Div_date'>{blogDate}</p>
+          <span className='blogs_card-Div_line'></span>
+          <p className='blogs_card-Div_date'>3 mins read</p>
+          <span className='blogs_card-Div_line'></span>
+          <div className='blogs_card-tags'>
+              {data.categories.map((category)=>{
+                return(<button className='blogs_card-btn'>{category}</button>)
+              })}
+          </div>
         </div>
       </div>
     </div>
