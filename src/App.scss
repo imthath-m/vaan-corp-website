@@ -934,3 +934,27 @@ $color-footer: #BC975E;
 .text-decoration{
   text-decoration: none;
 }
+
+.privacy{
+
+  padding: 3rem;
+
+  &-header{
+    font-size: xx-large;
+  }
+
+  &-sec_header{
+    font-size: large;
+  }
+
+  &-para{
+    font-size: medium;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  &-mail{
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
