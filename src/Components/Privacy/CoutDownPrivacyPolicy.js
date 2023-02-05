@@ -5,7 +5,7 @@ function CoutDownPrivacyPolicy() {
     <div className='privacy'>
         
         <h1 className='privacy-header '>Privacy Policy</h1>
-        <p className='privacy-para bottom-gap'>This privacy policy governs your use of the software application Countdown (“Application”) for Apple devices (iPhone and iPad) that was created by Mohammed Imthathullah M("Developer"). The 
+        <p className='privacy-para'>This privacy policy governs your use of the software application Countdown (“Application”) for Apple devices (iPhone and iPad) that was created by Mohammed Imthathullah M("Developer"). The 
                 Application lists events in your calendar and shows the Countdown for those events.</p>
    
         <h2 className='privacy-sec_header'>No Data Collection</h2>
