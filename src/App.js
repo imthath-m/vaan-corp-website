@@ -13,11 +13,9 @@ import HaafidhPrivacyPolicy from './Components/Privacy/HaafidhPrivacyPolicy';
 
 function App() {
   const home = useSelector(state => state.mainState.home)
-  const pathname = window.location.pathname.toLowerCase().includes("/privacy")
   return (
     <>
-      {/* {location && <Header />} */}
-        {pathname ? "" : <Header />}
+        <Header/>
         <Routes>
           <Route path='/' element={<HomeContainer />} />
           {/* <Route path='/blog' element={<BlogsContainer />} />
@@ -26,7 +24,7 @@ function App() {
           <Route path='/privacy/swimbols' element={<SwimbolsPrivacyPolicy />} />
           <Route path='/privacy/haafidh' element={<HaafidhPrivacyPolicy />} />
         </Routes>
-        {pathname ? "" : <Footer/>}
+        <Footer/>
       </>
   );
 }
