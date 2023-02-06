@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import logo from "../assets/images/Skydevz_brown_logo.svg"
 import { setHome } from '../redux/reducer/mainState'
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
   const dispatch = useDispatch()
@@ -51,9 +52,9 @@ function Header() {
           <a href="#">Link 3</a>
         </div> */}
         <nav className='header_nav'>
-          <Link to="/" className='text-decoration'><a href='#' ref={homeLink} onClick={()=>{homeFun()}} className='header_nav-link active'> Home</a></Link>
+          <Link to="/" className='text-decoration'><a href='#' ref={homeLink} onClick={homeFun} className='header_nav-link active'> Home</a></Link>
           {/* <Link to="/" href='#home_Products' className='text-decoration'><a href='#home_Products' ref={productsLink} className='header_nav-link'> Products</a></Link> */}
-          <a href='#home_Products' ref={productsLink} className='header_nav-link'> Products</a>
+          <HashLink smooth to="/#home_Products" className='text-decoration'><a href='/#home_Products' ref={productsLink} onClick={productsFun} className='header_nav-link' > Products</a></HashLink>
           {/* <Link to="/blog" className='text-decoration'><a href='#' ref={blogsLink} onClick={()=> blogsFun()} className='header_nav-link'> Blogs</a></Link> */}
         </nav>
         </div>
