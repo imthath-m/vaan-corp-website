@@ -10,21 +10,26 @@ import HomeContainer from './Components/Home/HomeContainer';
 import CountDownPrivacyPolicy from './Components/Privacy/CoutDownPrivacyPolicy';
 import SwimbolsPrivacyPolicy from './Components/Privacy/SwimbolsPrivacyPolicy';
 import HaafidhPrivacyPolicy from './Components/Privacy/HaafidhPrivacyPolicy';
+import SkrybPrivacyPolicy from './Components/Privacy/SkrybPrivacyPolicy';
+import GoogleSiteVerification from './Components/GoogleSiteVerification';
 
 function App() {
   const home = useSelector(state => state.mainState.home)
+  const path = window.location.pathname.includes("google")
   return (
     <>
-        <Header/>
+        {!path && <Header/>}
         <Routes>
           <Route path='/' element={<HomeContainer />} />
+          <Route path='/google085d3f953fe97354.html' element={<GoogleSiteVerification />} />
           {/* <Route path='/blog' element={<BlogsContainer />} />
           <Route path='/blogFull/:id' element={<BlogFullPage />} /> */}
           <Route path='/privacy/countdown' element={<CountDownPrivacyPolicy />} />
           <Route path='/privacy/swimbols' element={<SwimbolsPrivacyPolicy />} />
           <Route path='/privacy/haafidh' element={<HaafidhPrivacyPolicy />} />
+          <Route path='/privacy/skryb' element={<SkrybPrivacyPolicy />} />
         </Routes>
-        <Footer/>
+        {!path && <Footer/> }
       </>
   );
 }
