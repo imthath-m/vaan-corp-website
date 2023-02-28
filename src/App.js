@@ -12,16 +12,18 @@ import SwimbolsPrivacyPolicy from './Components/Privacy/SwimbolsPrivacyPolicy';
 import HaafidhPrivacyPolicy from './Components/Privacy/HaafidhPrivacyPolicy';
 import SkrybPrivacyPolicy from './Components/Privacy/SkrybPrivacyPolicy';
 import GoogleSiteVerification from './Components/GoogleSiteVerification';
+import VerifyForZoho from './Components/VerifyForZoho';
 
 function App() {
   const home = useSelector(state => state.mainState.home)
-  const path = window.location.pathname.includes("google")
+  const path = window.location.pathname.includes("html")
   return (
     <>
         {!path && <Header/>}
         <Routes>
           <Route path='/' element={<HomeContainer />} />
           <Route path='/google085d3f953fe97354.html' element={<GoogleSiteVerification />} />
+          <Route path='/verifyforzoho.html' element={<VerifyForZoho />} />
           {/* <Route path='/blog' element={<BlogsContainer />} />
           <Route path='/blogFull/:id' element={<BlogFullPage />} /> */}
           <Route path='/privacy/countdown' element={<CountDownPrivacyPolicy />} />
