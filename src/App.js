@@ -13,6 +13,7 @@ import HaafidhPrivacyPolicy from './Components/Privacy/HaafidhPrivacyPolicy';
 import SkrybPrivacyPolicy from './Components/Privacy/SkrybPrivacyPolicy';
 import GoogleSiteVerification from './Components/GoogleVerify/GoogleSiteVerification';
 import VerifyForZoho from './Components/ZohoVerify/VerifyForZoho';
+import SkrybTermsOfUse from './Components/Terms/SkrybTermsOfUse';
 
 function App() {
   const home = useSelector(state => state.mainState.home)
@@ -30,6 +31,7 @@ function App() {
         <Route path='/swimbols/privacy-policy' element={<SwimbolsPrivacyPolicy />} />
         <Route path='/haafidh/privacy-policy' element={<HaafidhPrivacyPolicy />} />
         <Route path='/skryb-ai/privacy-policy' element={<SkrybPrivacyPolicy />} />
+        <Route path='/skryb-ai/terms-of-use' element={<SkrybTermsOfUse />} />
       </Routes>
       {!path && <Footer/> }
     </>

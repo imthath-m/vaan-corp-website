@@ -1,0 +1,23 @@
+import React from 'react'
+
+function SkrybTermsOfUse() {
+  return (
+    <div className='privacy'>
+        
+        <h1 className='termsOfUse-header '>Terms of Use</h1>
+        
+        <h2 className='privacy-sec_header'>Free trial</h2>
+        <p className='privacy-para'>
+        Skryb AI provides a free version with limited features which you can access inside the app.
+        </p>
+
+        <h2 className='privacy-sec_header'>Subscription</h2>
+        <p className='privacy-para'>
+        You can unlock all Skryb AI features by purchasing a monthly subscription, which is available inside the app. The subscription renews every month automatically and can be canceled any time.
+        </p>
+
+    </div>
+  )
+}
+
+export default SkrybTermsOfUse
