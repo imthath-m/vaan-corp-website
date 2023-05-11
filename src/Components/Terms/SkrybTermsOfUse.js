@@ -13,9 +13,9 @@ function SkrybTermsOfUse() {
 
         <h2 className='privacy-sec_header'>Subscription</h2>
         <p className='privacy-para'>
-        You can unlock all Skryb AI features by purchasing a monthly subscription, which is available inside the app. The subscription renews every month automatically and can be canceled any time.
+          You can unlock all Skryb AI features by purchasing a monthly or yearly subscription, which are available inside the app. The subscription renews automatically at the end
+          of each billing period and can be canceled any time.
         </p>
-
     </div>
   )
 }
