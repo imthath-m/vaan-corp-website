@@ -1,9 +1,9 @@
 
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import {  Route, Routes } from 'react-router-dom';
 import './App.scss';
-import BlogsContainer from './Components/Blogs/BlogsContainer';
-import BlogFullPage from './Components/Blogs/BlogFullPage';
+// import BlogsContainer from './Components/Blogs/BlogsContainer';
+// import BlogFullPage from './Components/Blogs/BlogFullPage';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import HomeContainer from './Components/Home/HomeContainer';
@@ -16,7 +16,7 @@ import VerifyForZoho from './Components/ZohoVerify/VerifyForZoho';
 import SkrybTermsOfUse from './Components/Terms/SkrybTermsOfUse';
 
 function App() {
-  const home = useSelector(state => state.mainState.home)
+  // const home = useSelector(state => state.mainState.home)
   const path = window.location.pathname.includes("html")
   return (
     <>
