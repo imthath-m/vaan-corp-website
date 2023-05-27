@@ -14,10 +14,10 @@ import SkrybPrivacyPolicy from './Components/Privacy/SkrybPrivacyPolicy';
 import GoogleSiteVerification from './Components/GoogleVerify/GoogleSiteVerification';
 import VerifyForZoho from './Components/ZohoVerify/VerifyForZoho';
 import SkrybTermsOfUse from './Components/Terms/SkrybTermsOfUse';
-import Support from './Components/Support';
-import TermsOfService from './Components/TermsOfService';
-import PrivacyPolicy from './Components/PrivacyPolicy';
-import Cancellation from './Components/Cancellation';
+import Support from './Components/Info/Support';
+import TermsOfService from './Components/Info/TermsOfService';
+import PrivacyPolicy from './Components/Info/PrivacyPolicy';
+import Cancellation from './Components/Info/Cancellation';
 
 function App() {
   // const home = useSelector(state => state.mainState.home)
