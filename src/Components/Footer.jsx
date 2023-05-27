@@ -1,41 +1,42 @@
-import React, { useState } from 'react'
-import twitter from "../assets/images/twitter.svg"
-import toast, { Toaster } from 'react-hot-toast';
+import React from 'react'
+// import useState from 'react'
+// import twitter from "../assets/images/twitter.svg"
+// import toast, { Toaster } from 'react-hot-toast';
 import { twitterPage } from '../helper'
 
 function Footer() {
-  const [first, setFirst] = useState('');
+  // const [first, setFirst] = useState('');
  
-  const handleSubmit = event => {
+  // const handleSubmit = event => {
     
-    event.preventDefault();
-    const data = {
-      "email": first,
-      "source" : "vaanCorp",
-      "platform" : navigator.platform
-  }
-  fetch('https://email-collector-10.herokuapp.com/api/v1/emails/create', {
-      method: 'POST', 
-      headers: {
-          'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-      })
-      .then(response => response.json())
-      .then(data => {
-      console.log('Success:', data);
-      // toast('Submit Successfully',{ duration: 10000, position: 'bottom-center'})
-      toast.success("Submitted Successfully")
-      })
-      .catch((error) => {
-      console.error('Error:', error);
-      toast.error("Something went wrong!")
-  });
-    console.log('form submitted ✅');
-    // 👇️ clear input field values
-    setFirst('');
-    // window.location.reload()
-  }
+  //   event.preventDefault();
+  //   const data = {
+  //     "email": first,
+  //     "source" : "vaanCorp",
+  //     "platform" : navigator.platform
+  // }
+  // fetch('https://email-collector-10.herokuapp.com/api/v1/emails/create', {
+  //     method: 'POST', 
+  //     headers: {
+  //         'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(data),
+  //     })
+  //     .then(response => response.json())
+  //     .then(data => {
+  //     console.log('Success:', data);
+  //     // toast('Submit Successfully',{ duration: 10000, position: 'bottom-center'})
+  //     toast.success("Submitted Successfully")
+  //     })
+  //     .catch((error) => {
+  //     console.error('Error:', error);
+  //     toast.error("Something went wrong!")
+  // });
+  //   console.log('form submitted ✅');
+  //   // 👇️ clear input field values
+  //   setFirst('');
+  //   // window.location.reload()
+  // }
   return (
     <footer className='footer' id='footer' onClick={twitterPage}>
       {/* <div className='footer_heading'>

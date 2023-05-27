@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import Blog from './Blog'
 import searchIcon from "../../assets/images/search_icon.svg"
 import { useSelector } from 'react-redux';
-import { Pagination, Stack, Typography } from '@mui/material';
+import { Pagination, Stack } from '@mui/material';
 
 function BlogsContainer() {
   const blogs = useSelector(state => state.mainState.blogs);
-  console.log(blogs);
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
       setPage(value);
