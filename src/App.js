@@ -14,6 +14,10 @@ import SkrybPrivacyPolicy from './Components/Privacy/SkrybPrivacyPolicy';
 import GoogleSiteVerification from './Components/GoogleVerify/GoogleSiteVerification';
 import VerifyForZoho from './Components/ZohoVerify/VerifyForZoho';
 import SkrybTermsOfUse from './Components/Terms/SkrybTermsOfUse';
+import Support from './Components/Support';
+import TermsOfService from './Components/TermsOfService';
+import PrivacyPolicy from './Components/PrivacyPolicy';
+import Cancellation from './Components/Cancellation';
 
 function App() {
   // const home = useSelector(state => state.mainState.home)
@@ -32,6 +36,10 @@ function App() {
         <Route path='/haafidh/privacy-policy' element={<HaafidhPrivacyPolicy />} />
         <Route path='/skryb-ai/privacy-policy' element={<SkrybPrivacyPolicy />} />
         <Route path='/skryb-ai/terms-of-use' element={<SkrybTermsOfUse />} />
+        <Route path='/support' element={<Support/>}/>
+        <Route path='/terms-of-service' element={<TermsOfService/>}/>
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+        <Route path='/cancellation' element={<Cancellation/>}/>
       </Routes>
       {!path && <Footer/> }
     </>

@@ -726,6 +726,14 @@ $color-footer: #BC975E;
     }
   }
 
+  &Links{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
   &-copyrights {
     // position: absolute;
     // bottom: 0;
