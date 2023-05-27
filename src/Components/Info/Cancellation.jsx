@@ -3,22 +3,14 @@ import React from 'react'
 function Cancellation() {
   return (
     <div className='privacy'> 
-        <h1 className='privacy-header '>Cancellation</h1>
-        <p className='privacy-para'>This privacy policy governs your use of the software application Countdown (“Application”) for Apple devices (iPhone and iPad) that was created by Mohammed Imthathullah M("Developer"). The 
-                Application lists events in your calendar and shows the Countdown for those events.</p>
+        <h2 className='privacy-sec_header'>Help us improve the product</h2>
+        <p className='privacy-para'>Reach out to us at contact@vaancorp.com with your frustrations, we'll address them if possible or let you know if that is not in our plans so that you can proceed with cancellation and/or refund.</p>
+
+        <h2 className='privacy-sec_header'>Cancellation policy</h2>
+        <p className='privacy-para'>All the subscriptions within our products can be cancelled via the same platform you purchased it. Cancellations should be done before 24 hours of the next billing date.</p>
    
-        <h2 className='privacy-sec_header'>No Data Collection</h2>
-        <p className='privacy-para'>The Application does not collect any information from you. Internet connection is not required to use this application.</p>
-
-        <h2 className='privacy-sec_header'>Data Source</h2>
-        <p className='privacy-para'>The data displayed in the application is from the Calendar in your device. The application lets you view, add, edit or delete events in your Calendar.</p>
-
-        <h2 className='privacy-sec_header'>Changes to This Privacy Policy</h2>
-        <p className='privacy-para'>The developer may update this Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. The developer will notify you of any changes by 
-        posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
-
-        <h2 className='privacy-sec_header'>Contact</h2>
-        <p className='privacy-para'>If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: imthath.m@icloud.com" className='privacy-mail'>imthath.m@icloud.com</a> with the subject line "Countdown iOS App Privacy Policy".</p>
+        <h2 className='privacy-sec_header'>Refund policy</h2>
+        <p className='privacy-para'>If you are not satisfied with any of our products, you can request a refund by mailing to contact@vaancorp.com with subject Refund Request: [Product Name] or via the payment processor in each platform. If you request a refund within 1 hour of purchasing a product without abusing it, your request will be approved without any further questions. Any requests beyond that will be dealth with on a case by case basis.</p>
     </div>
   )
 }
