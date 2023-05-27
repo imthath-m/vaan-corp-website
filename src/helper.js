@@ -16,7 +16,7 @@ export const countdownPage = () => {
 }
 
 export const twitterPage = () => {
-    window.open('https://twitter.com/skydevz', '_blank');
+    window.open('https://twitter.com/vaancorp', '_blank');
 }
 
 export const getAllBlogs = () => {
