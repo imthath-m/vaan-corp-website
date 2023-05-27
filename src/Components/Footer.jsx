@@ -41,19 +41,6 @@ function Footer() {
 
   const navigate = useNavigate()
 
-  const navigateToSupport = () =>{
-    navigate('/support')
-  }
-  const navigateToTermsOfService = () =>{
-    navigate('/terms-of-service')
-  }
-  const navigateToPrivacyPolicy = () =>{
-    navigate('/privacy-policy')
-  }
-  const navigateToCancellation = () =>{
-    navigate('/cancellation')
-  }
-
   return (
     <footer className='footer' id='footer' >
       {/* <div className='footer_heading'>
@@ -69,10 +56,10 @@ function Footer() {
         <Toaster position="bottom-center" />
       </form> */}
       <div className='footerLinks'>
-        <div onClick={navigateToSupport}>Support</div>
-        <div onClick={navigateToTermsOfService}>Terms-of-service</div>
-        <div onClick={navigateToPrivacyPolicy}>Privacy-policy</div>
-        <div onClick={navigateToCancellation}>Cancellation</div>
+        <div onClick={() => navigate('/support')}>Support</div>
+        <div onClick={() => navigate('/terms-of-service')}>Terms of service</div>
+        <div onClick={() => navigate('/privacy-policy')}>Privacy policy</div>
+        <div onClick={() => navigate('/cancellation')}>Cancellation</div>
       </div>
       <span className='footer-copyrights' onClick={twitterPage}>
         {/* <a href='https://twitter.com/skydevz' target="_blank"><img className='footer-copyrights_img' alt='footer_twit_pic' src={twitter} /></a> */}
