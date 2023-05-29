@@ -2,7 +2,6 @@ import React from 'react'
 // import useState from 'react'
 // import twitter from "../assets/images/twitter.svg"
 // import toast, { Toaster } from 'react-hot-toast';
-import { twitterPage } from '../helper'
 import { useNavigate } from 'react-router-dom'
 
 function Footer() {
@@ -59,9 +58,9 @@ function Footer() {
         <div onClick={() => navigate('/support')}>Support</div>
         <div onClick={() => navigate('/terms-of-service')}>Terms of service</div>
         <div onClick={() => navigate('/privacy-policy')}>Privacy policy</div>
-        <div onClick={() => navigate('/cancellation')}>Cancellation</div>
+        <div onClick={() => navigate('/cancellation')}>Refunds</div>
       </div>
-      <span className='footer-copyrights' onClick={twitterPage}>
+      <span className='footer-copyrights'>
         {/* <a href='https://twitter.com/skydevz' target="_blank"><img className='footer-copyrights_img' alt='footer_twit_pic' src={twitter} /></a> */}
          © {new Date().getFullYear()}, Vaan Corporation. All Rights Reserved.</span>
     </footer>
