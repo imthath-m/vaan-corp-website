@@ -1,7 +1,7 @@
 import React from 'react'
 // import useRef from 'react'
 // import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from "../assets/images/Skydevz_brown_logo.svg"
 // import { setHome } from '../redux/reducer/mainState'
 import { HashLink } from 'react-router-hash-link';
@@ -36,10 +36,10 @@ function Header() {
   //   homeLink.current.className = 'header_nav-link '
   //   productsLink.current.className = 'header_nav-link '
   // }
-
+  const navigate = useNavigate()
   return (
     <div className='header'>
-      <div className='header_logo'>
+      <div className='header_logo'  onClick={() => navigate('/')}>
         <img src={logo} alt="skydevz_logo" />
         <p className='header_logo-title'>VAAN</p>
       </div>
