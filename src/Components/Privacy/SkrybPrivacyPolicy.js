@@ -29,7 +29,7 @@ function SkrybPrivacyPolicy() {
 
         <h2 className='privacy-sec_header'>Contact</h2>
         <p className='privacy-para'>
-            If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: imthath.m@hotmail.com" className='privacy-mail'>skryb-ai@vaancorp.com</a> with the subject line "Skryb AI Privacy Policy".
+            If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: contact@vaancorp.com" className='privacy-mail'>contact@vaancorp.com</a> with the subject line "Skryb AI Privacy Policy".
         </p>
     </div>
   )

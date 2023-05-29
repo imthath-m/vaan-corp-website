@@ -30,7 +30,7 @@ function HaafidhPrivacyPolicy() {
 
         <h2 className='privacy-sec_header'>Contact</h2>
         <p className='privacy-para'>
-            If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: haafidh@skydevz.com" className='privacy-mail'>haafidh@skydevz.com</a> with the
+            If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: contact@vaancorp.com" className='privacy-mail'>contact@vaancorp.com</a> with the
             subject line "Haafidh - Privacy Policy".
         </p>
     </div>
