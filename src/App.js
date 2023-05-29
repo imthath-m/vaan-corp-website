@@ -34,10 +34,10 @@ function App() {
         <Route path='/zohoverify/verifyforzoho.html' element={<VerifyForZoho />} />
         {/* <Route path='/blog' element={<BlogsContainer />} />
         <Route path='/blogFull/:id' element={<BlogFullPage />} /> */}
-        <Route path='/countdown/privacy-policy' element={<CountDownPrivacyPolicy />} />
-        <Route path='/swimbols/privacy-policy' element={<SwimbolsPrivacyPolicy />} />
-        <Route path='/haafidh/privacy-policy' element={<HaafidhPrivacyPolicy />} />
-        <Route path='/skryb/privacy-policy' element={<SkrybPrivacyPolicy />} />
+        <Route path='/countdown/privacy' element={<CountDownPrivacyPolicy />} />
+        <Route path='/swimbols/privacy' element={<SwimbolsPrivacyPolicy />} />
+        <Route path='/haafidh/privacy' element={<HaafidhPrivacyPolicy />} />
+        <Route path='/skryb/privacy' element={<SkrybPrivacyPolicy />} />
         <Route path='/skryb/terms' element={<SkrybTerms />} />
         <Route path='/countdown/terms' element={<CountdownTerms />} />
         <Route path='/swimbols/terms' element={<SwimbolsTerms />} />

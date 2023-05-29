@@ -19,7 +19,7 @@ function CoutDownPrivacyPolicy() {
         posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
 
         <h2 className='privacy-sec_header'>Contact</h2>
-        <p className='privacy-para'>If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: imthath.m@icloud.com" className='privacy-mail'>imthath.m@icloud.com</a> with the subject line "Countdown iOS App Privacy Policy".</p>
+        <p className='privacy-para'>If you have any questions or suggestions about this Privacy Policy, kindly send an email to <a href = "mailto: contact@vaancorp.com" className='privacy-mail'>contact@vaancorp.com</a> with the subject line "Countdown iOS App Privacy Policy".</p>
     </div>
   )
 }
