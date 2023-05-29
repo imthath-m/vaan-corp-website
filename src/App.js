@@ -43,8 +43,8 @@ function App() {
         <Route path='/swimbols/terms' element={<SwimbolsTerms />} />
         <Route path='/haafidh/terms' element={<HaafidhTerms />} />
         <Route path='/support' element={<Support/>}/>
-        <Route path='/terms-of-service' element={<TermsOfService/>}/>
-        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+        <Route path='/terms' element={<TermsOfService/>}/>
+        <Route path='/privacy' element={<PrivacyPolicy/>}/>
         <Route path='/cancellation' element={<Cancellation/>}/>
       </Routes>
       {!path && <Footer/> }

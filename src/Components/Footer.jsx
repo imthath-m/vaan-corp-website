@@ -56,8 +56,8 @@ function Footer() {
       </form> */}
       <div className='footerLinks'>
         <div onClick={() => navigate('/support')}>Support</div>
-        <div onClick={() => navigate('/terms-of-service')}>Terms of service</div>
-        <div onClick={() => navigate('/privacy-policy')}>Privacy policy</div>
+        <div onClick={() => navigate('/terms')}>Terms of service</div>
+        <div onClick={() => navigate('/privacy')}>Privacy policy</div>
         <div onClick={() => navigate('/cancellation')}>Refunds</div>
       </div>
       <span className='footer-copyrights'>
