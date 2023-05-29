@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SkrybTermsOfUse() {
+function SkrybTerms() {
   return (
     <div className='privacy'>
         
@@ -20,4 +20,4 @@ function SkrybTermsOfUse() {
   )
 }
 
-export default SkrybTermsOfUse
+export default SkrybTerms

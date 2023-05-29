@@ -13,11 +13,14 @@ import HaafidhPrivacyPolicy from './Components/Privacy/HaafidhPrivacyPolicy';
 import SkrybPrivacyPolicy from './Components/Privacy/SkrybPrivacyPolicy';
 import GoogleSiteVerification from './Components/GoogleVerify/GoogleSiteVerification';
 import VerifyForZoho from './Components/ZohoVerify/VerifyForZoho';
-import SkrybTermsOfUse from './Components/Terms/SkrybTermsOfUse';
+import SkrybTerms from './Components/Terms/SkrybTermsOfUse';
 import Support from './Components/Info/Support';
 import TermsOfService from './Components/Info/TermsOfService';
 import PrivacyPolicy from './Components/Info/PrivacyPolicy';
 import Cancellation from './Components/Info/Cancellation';
+import CountdownTerms from './Components/Terms/CountdownTermsOfUse';
+import SwimbolsTerms from './Components/Terms/SwimbolsTerms';
+import HaafidhTerms from './Components/Terms/HaafidhTerms';
 
 function App() {
   // const home = useSelector(state => state.mainState.home)
@@ -34,8 +37,11 @@ function App() {
         <Route path='/countdown/privacy-policy' element={<CountDownPrivacyPolicy />} />
         <Route path='/swimbols/privacy-policy' element={<SwimbolsPrivacyPolicy />} />
         <Route path='/haafidh/privacy-policy' element={<HaafidhPrivacyPolicy />} />
-        <Route path='/skryb-ai/privacy-policy' element={<SkrybPrivacyPolicy />} />
-        <Route path='/skryb-ai/terms-of-use' element={<SkrybTermsOfUse />} />
+        <Route path='/skryb/privacy-policy' element={<SkrybPrivacyPolicy />} />
+        <Route path='/skryb/terms' element={<SkrybTerms />} />
+        <Route path='/countdown/terms' element={<CountdownTerms />} />
+        <Route path='/swimbols/terms' element={<SwimbolsTerms />} />
+        <Route path='/haafidh/terms' element={<HaafidhTerms />} />
         <Route path='/support' element={<Support/>}/>
         <Route path='/terms-of-service' element={<TermsOfService/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
