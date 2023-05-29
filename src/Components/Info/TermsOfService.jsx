@@ -9,7 +9,7 @@ function TermsOfService() {
         <Link to='/skryb/terms' className='privacy-para'>Skryb AI</Link><br/><br/>
         <Link to='/countdown/terms' className='privacy-para'>Countdown</Link><br/><br/>
         <Link to='/swimbols/terms' className='privacy-para'>Swimbols</Link><br/><br/>
-        <Link to='/haafidh/terms' className='privacy-para'>Haafidh</Link>
+        {/* <Link to='/haafidh/terms' className='privacy-para'>Haafidh</Link> */}
     </div>
   )
 }

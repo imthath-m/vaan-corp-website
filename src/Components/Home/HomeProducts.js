@@ -24,7 +24,7 @@ function HomeProducts() {
             and then changing symbols all in one place, and take your code with you.
           </p>
         </figcaption>
-        <figcaption className='home_Products-card' onClick={()=> {haafidhPage()}}>
+        {/* <figcaption className='home_Products-card' onClick={()=> {haafidhPage()}}>
           <img alt='' src={image2} className='home_Products-card_image'/>
           <div className='home_Products-card_title'>
             <img alt='' src={haafidh} className='home_Products-card_titleImg'/>
@@ -34,7 +34,7 @@ function HomeProducts() {
             to revise them at specific spaced intervals. Please don’t expect this to be yet another
             Quran app
           </p>
-        </figcaption>
+        </figcaption> */}
         <figcaption className='home_Products-card' onClick={()=> {countdownPage()}}>
           <img alt='' src={countDown} className='home_Products-card_image'/>
           <div className='home_Products-card_title'>

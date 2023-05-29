@@ -9,7 +9,7 @@ function PrivacyPolicy() {
         <Link to='/skryb/privacy' className='privacy-para'>Skryb AI</Link><br/><br/>
         <Link to='/countdown/privacy' className='privacy-para'>Countdown</Link><br/><br/>
         <Link to='/swimbols/privacy' className='privacy-para'>Swimbols</Link><br/><br/>
-        <Link to='/haafidh/privacy' className='privacy-para'>Haafidh</Link>
+        {/* <Link to='/haafidh/privacy' className='privacy-para'>Haafidh</Link> */}
     </div>
   )
 }

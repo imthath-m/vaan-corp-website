@@ -13,7 +13,7 @@ function HomeContainer() {
   return (
     <div className='homeContainer'>
       <HomeTitle/>
-      <HomeContent/>
+      {/* <HomeContent/> */}
       <HomeProducts/>
     </div>
   )
