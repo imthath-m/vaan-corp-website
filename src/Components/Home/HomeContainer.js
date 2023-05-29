@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { getAllBlogs } from '../../helper'
-import HomeContent from './HomeContent'
+// import HomeContent from './HomeContent'
 import HomeProducts from './HomeProducts'
 import HomeTitle from './HomeTitle'
 
